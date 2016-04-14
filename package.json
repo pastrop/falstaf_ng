@@ -1,0 +1,30 @@
+{
+  "name": "falstaf",
+  "version": "1.0.0",
+  "description": "wine sales&analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pastrop/falstaf.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "analtics",
+    "recommending",
+    "systems"
+  ],
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pastrop/falstaf/issues"
+  },
+  "homepage": "https://github.com/pastrop/falstaf",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12"
+  }
+}

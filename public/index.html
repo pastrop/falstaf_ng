@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html ng-app="falstaf">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+      <link rel="stylesheet" href="css/bootstrap.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+
+        </style>
+      <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+      <link rel="stylesheet" href="css/main.css">
+
+      <!-- /container --><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js">
+        </script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js">
+        </script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse navbar-inner navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>-->
+          <a class="navbar-brand" href="#">PEOPLE'S BOOZE!!!!</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        <!--  <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control-email">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control-pwd">
+            </div>
+            <button type="submit" class="btn btn-success" id="knopka">Sign in</button>
+          </form>-->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <!--<img src="wine_1.jpg">-->
+        <h1>BuyMoreWine!</h1>        
+        <div class="row">
+         <div class="col-md-6">
+         </div>   
+         <div class="col-md-6">
+          <p>I was shopping for wine the other day and it occured to me that finding wines now is not that different than finding books and music was before Amazon and Apple got to it.  It is really difficult to find stuff. I also noticed that no one in the wine retail has any clue how to search for anything.  This site is solely dedicated to making search for wine as well as store that has it easy.  It starts really small but it'll grow and grow and grow some more.  Make no mistake, as any self-respecting tech startup megalomaniacs we are bent on world domination.  Lastly Robert Parker doesn't live here and neither does Two Buck Chuck...</p>
+         </div>
+      </div>  
+    </div>
+  </div>
+
+    <!--<div class="container">-->
+      <!-- Example row of columns -->
+      <div class="row color_1">
+        <div class="col-md-6">
+          <style>
+            .row{
+              text-align: center;
+            }
+          </style>
+          <h2>Cool Stores with Loads of Good Stuff</h2>
+           <hr></hr>
+          <p><a href='http://www.astorwines.com/'><i><b>Astor Wine</b></i></a>
+          at: 399 Lafayette St, New York, NY 10003
+          <a href="https://www.google.com/maps/place/399+Lafayette+St+NY+10003" target="_blank"><i>Map It!</i></a><p>
+           <hr></hr>
+          <p><a href='https://www.chambersstwines.com/'><b><i>Chambers Street Wine</i></b></a>
+          at: 148 Chambers St, New York, NY 10007 
+            <a href="https://www.google.com/maps/place/148+Chambers+St+NY+10007" target="_blank"><i>Map It!</i></a><p>
+           <hr></hr>
+          <p><a href='http://somegoodwine.com/'><b><i>Some Good Wine</i></b></a>
+          at: 13 E 8th St, New York, NY 10003 <a href="https://www.google.com/maps/place/13+E+8th+St+NY+10003" target="_blank"><i>Map It!</i></a></p>
+          <hr></hr>
+          <p><a href='http://www.vindesamis.com/'><b><i>Vin des Amis</i></b></a>
+          at: 375 Canal St, New York, NY 10013 <a href="https://www.google.com/maps/place/375+Canal+St+NY+10013" target="_blank"><i>Map It!</i></a></p>
+        </div>
+        <div class="col-md-6">
+          <h3>Search For Stuff</h3>
+
+          <form id="searchForm">
+            <div class="form-group">
+              <input id='name' name="name" placeholder=" Do You Remember Anything from the Name?" class="input-mysize">
+            </div>
+            <div class="form-group">
+              <input id="location" name="location" placeholder=" Where Is It From, Country or Region?" class="input-mysize">
+            </div>
+            <div class="form-group">
+              <input id="vintage" placeholder=" May be Year?" class="input-mysize" >
+              <!-- <input id="vintage" name="vintage" placeholder="Which Year???" class="form-control-year">-->
+            </div> 
+            <div class="form-group">
+              <input id="grape" placeholder=" What Grape, Like Merlot or Something?" class="input-mysize" >
+            </div> 
+           
+            <button type="submit" class="btn btn-warning" id="knopka_2" value="Submit">Find It!</button>
+            
+          </form>
+
+       </div>
+
+      </div>
+      <div class='color_2'>
+  <div ng-view></div>        
+        <br></br>
+      <div class="container">
+      <a class="twitter-timeline" href="https://twitter.com/ohpooryorick/lists/food-wine1" data-widget-id="717524897724030976">Tweets from https://twitter.com/ohpooryorick/lists/food-wine1</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <br></br>
+  </div>
+      <hr>
+      <footer>
+        <p>&copy; People's Booze</p>
+      </footer>
+    <!-- /container--> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script src="js/app.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='http://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+  </body>
+</html>

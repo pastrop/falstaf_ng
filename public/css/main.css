@@ -1,0 +1,165 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+/*body {
+  background: #333;
+}*/
+ 
+.pic {
+  border: 10px solid #fff;  
+  float: left;
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+   
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+/*GROW*/
+.grow img {
+  height: 200px;
+  width: 300px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.grow img:hover {
+  width: 400px;
+  height: 400px;
+}
+/*SHRINK*/
+.shrink img {
+  height: 400px;
+  width: 400px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.shrink img:hover {
+  width: 200px;
+  height: 300px;
+}
+/*TILT*/
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.tilt:hover {
+  -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+       -o-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+/*MORPH*/
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+/*FOCUS*/
+.focus {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.focus:hover {
+  border: 70px solid #000;
+  border-radius: 50%;
+}
+/*BLUR*/
+.blur img {
+     -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+     -o-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+     transition: all 1s ease;
+}
+ 
+.blur img:hover {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  -o-filter: blur(5px);
+  filter: blur(5px);
+
+}
+/*B&W*/
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+}
+/*DARKEN*/
+.brighten img {
+  -webkit-filter: brightness(-65%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.brighten img:hover {
+  -webkit-filter: brightness(0%);
+}
+.input-mysize { 
+  width: 300px; 
+}
+.color_1{
+  background-color: #fff0b3;
+}
+.color_2{
+  background-color: #EAFDBE;
+}
+.navbar-inner {
+/*background-image:url("BWINE4.JPG");*/
+/*background: transparent;*/
+background-color: #EAFDBE;
+border-style: none;
+height: 50px;
+filter: alpha(opacity=50);
+opacity: 0.5;
+}
